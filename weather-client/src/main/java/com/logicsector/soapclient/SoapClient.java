@@ -1,33 +1,29 @@
 package com.logicsector.soapclient;
-
-import java.net.URL;
+ 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
-import javax.xml.namespace.QName;
-
+ 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+ 
 import com.cdyne.ws.weatherws.Forecast;
 import com.cdyne.ws.weatherws.ForecastReturn;
 import com.cdyne.ws.weatherws.POP;
 import com.cdyne.ws.weatherws.Temp;
 import com.cdyne.ws.weatherws.Weather;
 import com.cdyne.ws.weatherws.WeatherSoap;
-
+ 
 public class SoapClient {
     private static final Logger           LOGGER      = LoggerFactory.getLogger(SoapClient.class);
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("EEEE, MMMM d yyyy");
-
+ 
     public static void main(String[] args) {
         try {
             LOGGER.debug("Creating weather service instance (Note: Weather = Service subclass)...");
             long start = new Date().getTime();
             // Get a reference to the SOAP service interface.
             Weather weatherService = new Weather();
-            //Weather weatherService = new Weather(new URL("file:/C:/DS4P/weather-client/src/main/wsdl/weather.wsdl"), new QName("http://ws.cdyne.com/WeatherWS/", "Weather"));
             WeatherSoap weatherSoap = weatherService.getWeatherSoap();
             // An alternate way to get the SOAP service interface; includes logging interceptors.
             // JaxWsProxyFactoryBean factory = new org.apache.cxf.jaxws.JaxWsProxyFactoryBean();
@@ -39,7 +35,7 @@ public class SoapClient {
             long end = new Date().getTime();
             LOGGER.debug("...Done! weatherService instance: {}", weatherService);
             LOGGER.debug("Time required to initialize weather service interface: {} seconds", (end - start) / 1000f);
-
+ 
             // Send a SOAP weather request for zip code 94025 (Menlo Park, CA, USA).
             LOGGER.debug("weatherSoap instance: {}", weatherSoap);
             start = new Date().getTime();
@@ -70,5 +66,5 @@ public class SoapClient {
             LOGGER.error("An exception occurred, exiting", e);
         }
     }
-
+ 
 }
