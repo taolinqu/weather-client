@@ -21,6 +21,7 @@ public class SoapClient {
     public static void main(String[] args) {
         try {
             LOGGER.debug("Creating weather service instance (Note: Weather = Service subclass)...");
+            
             long start = new Date().getTime();
             // Get a reference to the SOAP service interface.
             Weather weatherService = new Weather();
