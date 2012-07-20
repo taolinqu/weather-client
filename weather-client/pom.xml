@@ -10,6 +10,7 @@
     <packaging>jar</packaging>
     
     <!-- Added comments in gittest workspace -->
+    <!-- Added comments for more test branch in gittest workspace -->
     <dependencies>
         <dependency>
             <groupId>org.apache.cxf</groupId>
