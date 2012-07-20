@@ -9,6 +9,7 @@
     <name>SOAP weather client</name>
     <packaging>jar</packaging>
     
+    <!-- Update comments -->
     <!-- Deleted all comments for the 2nd time from master branch in DS4P workspace. -->
     <dependencies>
         <dependency>
