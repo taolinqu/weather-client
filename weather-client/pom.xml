@@ -8,9 +8,10 @@
     <version>1.0</version>
     <name>SOAP weather client</name>
     <packaging>jar</packaging>
-    
+
     <!-- Added comments in gittest workspace -->
     <!-- Added comments for more test branch in gittest workspace -->
+    <!-- Comments for master branch -->
     <dependencies>
         <dependency>
             <groupId>org.apache.cxf</groupId>
