@@ -9,9 +9,7 @@
     <name>SOAP weather client</name>
     <packaging>jar</packaging>
 
-    <!-- Added comments in gittest workspace -->
-    <!-- Added comments for more test branch in gittest workspace -->
-    <!-- Comments for master branch -->
+    <!-- Deleted all comments from master branch in DS4P workspace. -->
     <dependencies>
         <dependency>
             <groupId>org.apache.cxf</groupId>
