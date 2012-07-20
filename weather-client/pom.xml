@@ -8,6 +8,7 @@
     <version>1.0</version>
     <name>SOAP weather client</name>
     <packaging>jar</packaging>
+    <!-- Added third line of comment for master branch from gittest workspace -->
 	<!-- Added 2nd line of comment for master branch from gittest workspace -->
     <!-- Added comments in gittest workspace -->
     <!-- Added comments for more test branch in gittest workspace -->
