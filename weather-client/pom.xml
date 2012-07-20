@@ -9,6 +9,7 @@
     <name>SOAP weather client</name>
     <packaging>jar</packaging>
     
+    <!-- Added comments in gittest workspace -->
     <dependencies>
         <dependency>
             <groupId>org.apache.cxf</groupId>
