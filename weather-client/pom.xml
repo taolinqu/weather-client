@@ -9,6 +9,7 @@
     <name>SOAP weather client</name>
     <packaging>jar</packaging>
     
+    <!-- Comments for master branch -->
     <dependencies>
         <dependency>
             <groupId>org.apache.cxf</groupId>
